@@ -1,0 +1,91 @@
+/* Source: http://youtube.com/JSBangladesh */
+
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+body{
+    background: linear-gradient(180deg,yellow,red,blue);
+}
+
+  /*-------------------------
+      General Styles
+  --------------------------*/
+  html {
+    overflow: hidden;
+  }
+   
+  a,
+  a:visited {
+    outline: none;
+    color: #ff2727;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  section,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  /*-------------------------
+      The clocks
+  --------------------------*/
+  
+  #clock {
+    width: 370px;
+    padding: 40px;
+    margin: 100px auto 60px;
+    position: relative;
+  }
+  
+  #clock:after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    border-radius: 100%;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 2px;
+    z-index: -1;
+  }
+  
+  #clock .display {
+    text-align: center;
+    padding: 30px;
+    border-radius: 6px;
+    position: relative;
+    height: 54px;
+  }
+  
+  /*-------------------------
+      Dark color theme
+  --------------------------*/
+  
+  #clock.dark {
+    background:linear-gradient(180deg,#3bff3b,#4916ff,rgb(252, 37, 37),yellow);
+    color: #efff08;;
+    border-radius: 10px;
+  }
+  
+  #clock.dark:after {
+    box-shadow: 0 4px 10px rgb(255, 0, 0);
+  }
+  #clock.dark .display {
+    background: linear-gradient(180deg, red,blue,green);
+    box-shadow: 0 1px 1px #3bff3b inset, 0 1px 1px #4916ff;
+    border-radius: 20px;
+  }
+  h1#time {
+    display: inline-block;
+    font-size: 36px;
+  }
